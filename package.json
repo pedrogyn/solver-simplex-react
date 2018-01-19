@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "production": "NODE_ENV=production webpack --progress -p",
-    "start":"http-server -p $PORT"
+    "start": "http-server -p $PORT"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +31,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "http-server": "^0.10.0"
+    "http-server": "^0.10.0",
+    "underscore": "^1.8.3"
   }
 }
