@@ -2,10 +2,8 @@
 
 # Exemplo prático para Maximização utilizando Simplex
 
-#Instalação e execução
-
-## npm install && npm run dev
-
-## abrir o browser no link http://localhost:8080
+## Instalação e execução
+    npm install && npm run dev 
+    abrir o browser no link http://localhost:8080
 
 
