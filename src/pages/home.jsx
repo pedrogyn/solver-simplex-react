@@ -102,7 +102,7 @@ export default class Home extends Component{
                                                 <tr key={r} style={{color: (table.pivot != undefined && table.pivot.column == (r + 1)) ? 'red' : 'black'}} >
                                                     {row.map((td, d) => {
                                                         return(
-                                                            <td key={d} style={{ color: (table.pivot != undefined && table.pivot.row == (d - 1)) ? 'blue' : null}}> {parseInt(td).toFixed(1)}</td> 
+                                                            <td key={d} style={{ color: (table.pivot != undefined && table.pivot.row == (d - 1)) ? 'blue' : null}}> {parseInt(td).toFixed(0)}</td> 
                                                         )
                                                     })}
                                                 </tr>
@@ -126,18 +126,16 @@ export default class Home extends Component{
         const restricoes = 'Digite as restrições do problema. Não se esqueca das restricoes de não negatividade'
         return (
             <div>
-                <div className='col-md-6'>
+                <div className="col-md-6">
                     <h1>Solver Simplex - Maximização</h1>                
-                </div>
-                <div className='col-md-6'>
+                
                     <p>Esse sistema resolve problemas de maximização seguindo os seguintes critérios: </p>
                     <ul>
                         <li>{ 'Utilizar os seguintes operadores: +, -, >=, <= ou = '} </li>
                         <li>Colocar uma função por linha</li>
+                        <li>Máximo de 3 variáveis</li>
                         <li>Caso tenha dúvidas, clique no botão exemplo</li>
                     </ul>
-                </div>
-                <div className="col-md-6">
                     <label htmlFor="">{funcaoL}</label>
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">L</span>
@@ -152,9 +150,9 @@ export default class Home extends Component{
                         <button className='btn btn-success' onClick={()=>{this.maximize()}}>Maximizar função</button>                        
                         <button className='btn btn-primary' onClick={()=>{this.setExemplo()}} style={{marginLeft: 10}}>Preencher com Exemplo</button>                        
                     </div>
+                    {this.resultado()}                    
                 </div>
                 <div className='col-md-6'>
-                    {this.resultado()}
                     {this.tabelas()}
                 </div>
             </div>
