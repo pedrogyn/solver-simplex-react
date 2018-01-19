@@ -24,7 +24,6 @@ export default class Home extends Component{
                 <div className='col-md-8'>
                     <h1>Solver Simplex - Maximização</h1>                
                 </div>
-                
                 <div className="col-md-6">
                     <div className="input-group">
                         <span className="input-group-addon" id="basic-addon1">L</span>
