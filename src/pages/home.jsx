@@ -126,10 +126,10 @@ export default class Home extends Component{
         const restricoes = 'Digite as restrições do problema. Não se esqueca das restricoes de não negatividade'
         return (
             <div>
-                <div className='col-md-8'>
+                <div className='col-md-6'>
                     <h1>Solver Simplex - Maximização</h1>                
                 </div>
-                <div className='col-md-8'>
+                <div className='col-md-6'>
                     <p>Esse sistema resolve problemas de maximização seguindo os seguintes critérios: </p>
                     <ul>
                         <li>{ 'Utilizar os seguintes operadores: +, -, >=, <= ou = '} </li>
