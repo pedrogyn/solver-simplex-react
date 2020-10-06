@@ -1,13 +1,15 @@
 import React from 'react'
 import {Router, Route, Redirect, hashHistory } from 'react-router'
 
-import Help from '../pages/help'
-import Home from '../pages/home'
+import Examples from '../pages/examples'
+import Solver from '../pages/solver'
+import Result from '../pages/result'
 
 export default props => (
     <Router history={hashHistory} >
-        <Route path='/home' component={Home}/>
-        <Route path='/help' component={Help}/>
-        <Redirect from='*' to='home'/>
+        <Route path='/solver' component={Solver}/>
+        <Route path='/result' component={Result}/>
+        <Route path='/' component={Examples}/>
+        <Redirect from='*' to='/'/>
     </Router>
 )

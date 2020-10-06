@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { maximize } from '../helpers/solver/solver'
+import { maximize } from '../../helpers/solver/solver'
 export default class Home extends Component{
 
     constructor(){

@@ -10,8 +10,8 @@ export default class Menu extends Component{
                     </div>
                     <div id='navbar' className='navbar-collapse collapse'>
                         <ul className='nav navbar-nav'>
-                            <li><a href="#/home">Início</a></li>
-                            <li><a href="#/help">Ajuda</a></li>
+                            <li><a href="#/">Exercicios</a></li>
+                            <li><a href="#/solver">Solver</a></li>
                             <li><a href="https://goo.gl/175w31"><i style={{fontSize: 20}} className="fa fa-github"></i> Código </a></li>
                         </ul>
                     </div>
