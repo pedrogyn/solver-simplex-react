@@ -20,15 +20,15 @@ const ExamplesTable = () => {
             stringResult += `Max = ${parseValue(max)}; `
         }
 
-        if (x) {
+        if (x >= 0) {
             stringResult += `X1 = ${parseValue(x)}; `
         }
 
-        if (y) {
+        if (y >= 0) {
             stringResult += `X2 = ${parseValue(y)}; `
         }
 
-        if (z) {
+        if (z >= 0) {
             stringResult += `X3 = ${parseValue(z)}; `
         }
 

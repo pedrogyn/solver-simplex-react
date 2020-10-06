@@ -5,9 +5,9 @@ import { maximize } from '../../helpers/solver/solver'
 import ResultTable from './components/resultTable'
 import DevelopmentTable from './components/developmentTable'
 
-const Result = (props) => {
+const Result = ({router, location}) => {
 
-    const item = props.location.query
+    const item = location.query
 
     const result = maximize(item.maximize, item.constraints)
 
@@ -15,7 +15,7 @@ const Result = (props) => {
         <div>
 
             <div className='col-md-4'>
-                <ResultTable result={result} />
+                <ResultTable result={result} goBack={router.goBack}/>
             </div>
             <div className='col-md-8'>
                <DevelopmentTable result={result}/>
