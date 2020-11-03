@@ -3,15 +3,6 @@ import VMasker from 'vanilla-masker'
 
 class Fees extends Component {
 
-    constructor() {
-        super()
-        this.state = {
-            i1: 10,
-            i2: 5,
-            i3: 30
-        }
-    }
-
     formatValue(value) {
         return `${VMasker.toPattern(value, '999')}`
     }
