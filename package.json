@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "http-server": "^0.10.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "vanilla-masker": "^1.2.0"
   }
 }
