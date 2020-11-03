@@ -3,7 +3,7 @@
 ### Exemplo prático para Maximização utilizando Simplex
 
 #### Instalação e execução
-    npm install && npm run dev 
+    yarn && yarn run dev
     abrir o browser no link http://localhost:8080
 
 
