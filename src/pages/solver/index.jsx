@@ -28,10 +28,8 @@ export default class Home extends Component{
         } else if(this.state.restricoes.length == 0){
             alert('Preenchar o campo das restrições')
         } else {
-            // console.log({funcao: this.state.f, restricoes: this.state.restricoes.split('\n')})
             const resultado = maximize(this.state.f, this.state.restricoes.split('\n'))
             this.setState({resultado})
-            console.log(resultado)
             if(resultado == undefined){
                 alert('Não foi possível definir um resultado. Verifique os dados informados')
             }
